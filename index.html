@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ANIMASHAUN DIGITAL CLOCK PRO</title>
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-theme="neon">
+
+  <div id="bg-animation" aria-hidden="true"></div>
+
+  <!-- Header / Marquee -->
+  <header id="header">
+    <div id="marquee"><span>ANIMASHAUN DIGITAL CLOCK</span></div>
+
+    <div id="controls">
+      <button id="settings-btn" title="Settings">⚙️</button>
+
+      <div id="theme-toggle">
+        <label class="toggle">
+          <input id="themeSwitch" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+
+        <select id="themeSelect">
+          <option value="neon">Neon</option>
+          <option value="glass">Glass</option>
+          <option value="dark">Dark</option>
+          <option value="cyber">Cyber</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Settings panel -->
+  <aside id="settings-panel" aria-hidden="true">
+    <h2>Settings</h2>
+
+    <label>Clock mode</label>
+    <select id="clockMode">
+      <option value="digital">Digital</option>
+      <option value="flip">3D Flip</option>
+      <option value="minimal">Minimal</option>
+    </select>
+
+    <label>Voice assistant</label>
+    <select id="voiceToggle">
+      <option value="on">ON</option>
+      <option value="off">OFF</option>
+    </select>
+
+    <label>Auto weather update</label>
+    <select id="autoWeatherToggle">
+      <option value="on">ON (10m)</option>
+      <option value="off">OFF</option>
+    </select>
+
+    <label>Marquee speed</label>
+    <input id="marqueeSpeed" type="range" min="6" max="60" value="12" />
+
+    <button id="close-settings">Close</button>
+  </aside>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Digital Clock -->
+    <section id="clock-area" class="card">
+      <div id="clock-container">
+        <div id="time" class="digital">00:00:00</div>
+        <div id="flip-clock" class="hidden"></div>
+        <div id="date">-- --- ----</div>
+      </div>
+    </section>
+
+    <!-- Weather -->
+    <section id="weather-area" class="card">
+      <h3>Weather</h3>
+
+      <div class="controls-row">
+        <input id="ng-search" type="text" placeholder="Search Nigerian State...">
+        <button id="voiceStateBtn" title="Speak state">🎤</button>
+      </div>
+
+      <ul id="ng-results" class="ng-results"></ul>
+
+      <!-- Nigeria Map -->
+      <div id="nigeria-map-box" class="map-card">
+        <h4>Click a state</h4>
+
+        <svg id="nigeriaMap" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Sample clickable blocks (kept simple but fully functional) -->
+          <rect id="Lagos" x="100" y="600" width="120" height="80" class="state" />
+          <rect id="Ogun" x="240" y="600" width="120" height="80" class="state" />
+          <rect id="Oyo" x="380" y="600" width="120" height="80" class="state" />
+          <rect id="Ondo" x="520" y="600" width="120" height="80" class="state" />
+          <rect id="Ekiti" x="660" y="600" width="120" height="80" class="state" />
+          <rect id="Osun" x="800" y="600" width="120" height="80" class="state" />
+
+          <rect id="Kano" x="300" y="200" width="120" height="80" class="state" />
+          <rect id="Kaduna" x="450" y="200" width="120" height="80" class="state" />
+          <rect id="Abia" x="700" y="500" width="120" height="80" class="state" />
+          <rect id="Anambra" x="550" y="500" width="120" height="80" class="state" />
+          <rect id="Enugu" x="400" y="500" width="120" height="80" class="state" />
+
+          <text x="20" y="780" fill="#9ff">Click any block to select a state</text>
+        </svg>
+      </div>
+
+      <!-- Manual input -->
+      <div class="controls-row">
+        <input id="locationInput" type="search" placeholder="City or State (e.g. Lagos)">
+        <button id="updateWeatherBtn">Update</button>
+        <button id="speakWeatherBtn">🔊</button>
+        <button id="detectGPSBtn">📍 GPS</button>
+      </div>
+
+      <!-- Weather Details -->
+      <div id="weather-details" class="weather-details">
+        <div class="left">
+          <div id="state-name">Location: --</div>
+          <div id="temperature">Temp: --°C</div>
+          <div id="humidity">Humidity: --%</div>
+          <div id="pressure">Pressure: -- hPa</div>
+          <div id="wind">Wind: -- m/s</div>
+          <div id="rain-prob">Rainfall: --</div>
+        </div>
+
+        <div class="right">
+          <div id="weatherIcon" class="weather-icon">—</div>
+
+          <div id="rainMeterBox">
+            <label>Rainfall Probability</label>
+            <progress id="rainMeter" max="100" value="0"></progress>
+            <div id="rainLabel">--%</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weatherOutput" class="summary"></div>
+    </section>
+
+    <!-- World Clock -->
+    <section id="world-area" class="card">
+      <h3>World Clock</h3>
+      <input id="world-search" type="text" placeholder="Search city or timezone...">
+      <ul id="world-list"></ul>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div id="version">ANIMASHAUN DIGITAL CLOCK PRO • v1.0</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/voice.js"></script>
+  <script src="js/worldclock.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <!-- NOTE: This is symbolic; shapes are rectangles for simplicity -->
+  <style>
+    .st{fill:#0b2a3a;stroke:#00eaff;stroke-width:1;opacity:0.85;cursor:pointer}
+    .st:hover{fill:#083146; filter: drop-shadow(0 6px 10px rgba(0,234,255,0.2))}
+    .label{fill:#bffcff;font-size:10px;font-family:Arial;text-anchor:middle}
+  </style>
+
+  <!-- Row 1 (north) -->
+  <g id="Jigawa" class="state"><rect class="st" x="60" y="30" width="90" height="60"/><text class="label" x="105" y="65">Jigawa</text></g>
+  <g id="Kano" class="state"><rect class="st" x="160" y="30" width="90" height="60"/><text class="label" x="205" y="65">Kano</text></g>
+  <g id="Katsina" class="state"><rect class="st" x="260" y="30" width="90" height="60"/><text class="label" x="305" y="65">Katsina</text></g>
+  <g id="Sokoto" class="state"><rect class="st" x="360" y="30" width="90" height="60"/><text class="label" x="405" y="65">Sokoto</text></g>
+
+  <!-- Row 2 -->
+  <g id="Kebbi" class="state"><rect class="st" x="60" y="110" width="90" height="60"/><text class="label" x="105" y="145">Kebbi</text></g>
+  <g id="Zamfara" class="state"><rect class="st" x="160" y="110" width="90" height="60"/><text class="label" x="205" y="145">Zamfara</text></g>
+  <g id="Kwara" class="state"><rect class="st" x="260" y="110" width="90" height="60"/><text class="label" x="305" y="145">Kwara</text></g>
+  <g id="Kogi" class="state"><rect class="st" x="360" y="110" width="90" height="60"/><text class="label" x="405" y="145">Kogi</text></g>
+
+  <!-- Row 3 -->
+  <g id="Kaduna" class="state"><rect class="st" x="60" y="190" width="90" height="60"/><text class="label" x="105" y="225">Kaduna</text></g>
+  <g id="Plateau" class="state"><rect class="st" x="160" y="190" width="90" height="60"/><text class="label" x="205" y="225">Plateau</text></g>
+  <g id="Nasarawa" class="state"><rect class="st" x="260" y="190" width="90" height="60"/><text class="label" x="305" y="225">Nasarawa</text></g>
+  <g id="Benue" class="state"><rect class="st" x="360" y="190" width="90" height="60"/><text class="label" x="405" y="225">Benue</text></g>
+
+  <!-- Row 4 -->
+  <g id="Bauchi" class="state"><rect class="st" x="60" y="270" width="90" height="60"/><text class="label" x="105" y="305">Bauchi</text></g>
+  <g id="Gombe" class="state"><rect class="st" x="160" y="270" width="90" height="60"/><text class="label" x="205" y="305">Gombe</text></g>
+  <g id="Taraba" class="state"><rect class="st" x="260" y="270" width="90" height="60"/><text class="label" x="305" y="305">Taraba</text></g>
+  <g id="Adamawa" class="state"><rect class="st" x="360" y="270" width="90" height="60"/><text class="label" x="405" y="305">Adamawa</text></g>
+
+  <!-- Row 5 (south) -->
+  <g id="Lagos" class="state"><rect class="st" x="60" y="350" width="90" height="60"/><text class="label" x="105" y="385">Lagos</text></g>
+  <g id="Ogun" class="state"><rect class="st" x="160" y="350" width="90" height="60"/><text class="label" x="205" y="385">Ogun</text></g>
+  <g id="Ondo" class="state"><rect class="st" x="260" y="350" width="90" height="60"/><text class="label" x="305" y="385">Ondo</text></g>
+  <g id="Ekiti" class="state"><rect class="st" x="360" y="350" width="90" height="60"/><text class="label" x="405" y="385">Ekiti</text></g>
+
+  <!-- Row 6 -->
+  <g id="Oyo" class="state"><rect class="st" x="60" y="430" width="90" height="60"/><text class="label" x="105" y="465">Oyo</text></g>
+  <g id="Osun" class="state"><rect class="st" x="160" y="430" width="90" height="60"/><text class="label" x="205" y="465">Osun</text></g>
+  <g id="Kogi2" class="state"><rect class="st" x="260" y="430" width="90" height="60"/><text class="label" x="305" y="465">Kogi</text></g>
+  <g id="Edo" class="state"><rect class="st" x="360" y="430" width="90" height="60"/><text class="label" x="405" y="465">Edo</text></g>
+
+  <!-- Row 7 -->
+  <g id="Delta" class="state"><rect class="st" x="60" y="510" width="90" height="60"/><text class="label" x="105" y="545">Delta</text></g>
+  <g id="Rivers" class="state"><rect class="st" x="160" y="510" width="90" height="60"/><text class="label" x="205" y="545">Rivers</text></g>
+  <g id="Bayelsa" class="state"><rect class="st" x="260" y="510" width="90" height="60"/><text class="label" x="305" y="545">Bayelsa</text></g>
+  <g id="Cross_River" class="state"><rect class="st" x="360" y="510" width="90" height="60"/><text class="label" x="405" y="545">Cross R.</text></g>
+
+  <!-- Row 8 -->
+  <g id="Enugu" class="state"><rect class="st" x="60" y="590" width="90" height="60"/><text class="label" x="105" y="625">Enugu</text></g>
+  <g id="Anambra" class="state"><rect class="st" x="160" y="590" width="90" height="60"/><text class="label" x="205" y="625">Anambra</text></g>
+  <g id="Imo" class="state"><rect class="st" x="260" y="590" width="90" height="60"/><text class="label" x="305" y="625">Imo</text></g>
+  <g id="Abia" class="state"><rect class="st" x="360" y="590" width="90" height="60"/><text class="label" x="405" y="625">Abia</text></g>
+
+  <!-- FCT -->
+  <g id="FCT_Abuja" class="state"><rect class="st" x="460" y="190" width="90" height="60"/><text class="label" x="505" y="225">FCT Abuja</text></g>
+
+  <!-- small note -->
+  <text x="20" y="780" fill="#7ff" font-size="10">Simplified clickable Nigeria map (rectangles). Replace with detailed SVG for precision.</text>
+</svg>
